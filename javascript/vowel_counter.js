@@ -1,26 +1,31 @@
 function getCount(str) {
-    let arrCheck = str.split('')
-    let count = 0
-    for (x in arrCheck) {
-        switch (arrCheck[x]) {
-            case 'a': count++;
-            break;
-            case 'e': count++;
-            break;
-            case 'i': count++;
-            break;
-            case 'o': count++;
-            break;
-            case 'u': count++;
-            break;
-        }
+  let arrCheck = str.split("");
+  let count = 0;
+  for (x in arrCheck) {
+    switch (arrCheck[x]) {
+      case "a":
+        count++;
+        break;
+      case "e":
+        count++;
+        break;
+      case "i":
+        count++;
+        break;
+      case "o":
+        count++;
+        break;
+      case "u":
+        count++;
+        break;
     }
-    return count
+  }
+  return count;
 }
 
-str = 'affgoogeeghhuih'
+str = "affgoogeeghhuih";
 
-getCount(str)
+getCount(str);
 
 // Better idea: don't set array and loop
 

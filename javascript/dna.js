@@ -1,26 +1,26 @@
 // Add characters to string (target += 'char')
 
 function dnaStrand(dna) {
-    result = ''
-    for (x in dna) {
-        switch (dna[x]){
-            case 'A':
-                result += 'T'
-                break
-            case 'T':
-                result += 'A'
-                break
-            case 'C':
-                result += 'G'
-                break
-            case 'G':
-                result += 'C'
-                break
-        }
+  result = "";
+  for (x in dna) {
+    switch (dna[x]) {
+      case "A":
+        result += "T";
+        break;
+      case "T":
+        result += "A";
+        break;
+      case "C":
+        result += "G";
+        break;
+      case "G":
+        result += "C";
+        break;
     }
-    return String(result)
+  }
+  return String(result);
 }
 
-const dna = "GTAT"
+const dna = "GTAT";
 
-console.log(dnaStrand(dna))
+console.log(dnaStrand(dna));
