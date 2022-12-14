@@ -1,9 +1,5 @@
 def to_csv_text(array)
-    answer = ''
-    for x in array.length()
-        puts array[x]
-    end
-    # return answer
+  array.map{|x| x.join(",")}.join("\n")
 end
 
 array = [
