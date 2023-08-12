@@ -3,8 +3,8 @@ package katas
 import "fmt"
 
 func Greet(name string) string {
-  if name == "Johnny" {
-    return fmt.Sprintf("Hello, my love!")
-  }
-  return fmt.Sprintf("Hello, %v!", name)
+	if name == "Johnny" {
+		return "Hello, my love!"
+	}
+	return fmt.Sprintf("Hello, %v!", name)
 }

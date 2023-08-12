@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(katas.Greet("Johnny"))
+	fmt.Println(katas.FindMultiples(2, 12))
 }
