@@ -11,12 +11,11 @@ plan:
 */
 
 func MaxMultiple(d, b int) int {
-	candidate := b
-	for candidate > 0 {
-		if candidate <= b && candidate%d == 0 {
-			return candidate
+	for b > 0 {
+		if b%d == 0 {
+			return b
 		}
-		candidate--
+		b--
 	}
 	return b
 }
