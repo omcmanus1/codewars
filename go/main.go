@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(katas.FindMultiples(2, 12))
+	fmt.Println(katas.MaxMultiple(10, 50))
 }
