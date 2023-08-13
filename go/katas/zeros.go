@@ -20,7 +20,37 @@ Logic:
 import (
 	"fmt"
 	"math/big"
+	"strings"
 )
+
+func DoubleFactorial(n int) *big.Int {
+	res := big.NewInt(1)
+	for i := n; i >= 1; i -= 2 {
+		if i == 0 || i == 1 {
+			break
+		} else {
+			res = res.Mul(res, big.NewInt(int64(i)))
+		}
+	}
+	return res
+}
+
+func CountZeros(n int) int {
+	resultString := DoubleFactorial(n).String()
+	resultArray := strings.Split(resultString, "")
+	count := 0
+	for i := len(resultArray) - 1; i >= 0; i-- {
+		if resultArray[i] != "0" {
+			break
+		}
+		if resultArray[i] == "0" {
+			count++
+		}
+	}
+	return count
+}
+
+// *** unused now ***
 
 func SplitInt(n int) []int {
 	slc := []int{}
@@ -30,33 +60,4 @@ func SplitInt(n int) []int {
 	}
 	fmt.Println(slc)
 	return slc
-}
-
-func DoubleFactorial(n int) int {
-	res := 1
-	for i := n; i >= 0; i -= 2 {
-		if i == 0 || i == 1 {
-			break
-		} else {
-			res *= i
-		}
-	}
-	fmt.Println("bigInt: ", big.NewInt(int64(res)))
-	return res
-}
-
-func CountZeros(n int) int {
-	result := DoubleFactorial(n)
-	// println("result: ", result)
-	resultArray := SplitInt(int(result))
-	count := 0
-	for _, val := range resultArray {
-		if val != 0 {
-			break
-		}
-		if val == 0 {
-			count++
-		}
-	}
-	return count
 }
