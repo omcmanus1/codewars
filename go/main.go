@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(katas.MaxMultiple(10, 45))
+	fmt.Println(katas.CountZeros(500))
 }
