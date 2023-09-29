@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(katas.CountZeros(500))
+	fmt.Println(katas.CountBits(456))
 }
