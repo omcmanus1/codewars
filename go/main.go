@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(katas.CountBits(456))
+	fmt.Println(katas.CartesianNeighbor(1, 2))
 }
