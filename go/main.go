@@ -5,6 +5,9 @@ import (
 	"fmt"
 )
 
+var numbers = []int{8, 6, 4, 2, 6, 1, 3}
+
 func main() {
-	fmt.Println(katas.CartesianNeighbor(1, 2))
+	fmt.Printf("single pass: %v \n", katas.BubblesortOnce(numbers))
+	fmt.Printf("full sort: %v \n", katas.Bubblesort(numbers))
 }
