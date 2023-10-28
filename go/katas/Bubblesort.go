@@ -1,32 +1,31 @@
 package katas
 
+func singlePass(arr []int, n int) []int {
+	for i := 0; i < n-1; i++ {
+		if arr[i] > arr[i+1] {
+			temp := arr[i]
+			arr[i] = arr[i+1]
+			arr[i+1] = temp
+		}
+	}
+	return arr
+}
+
 func BubblesortOnce(numbers []int) []int {
 	numsCopy := make([]int, len(numbers))
 	copy(numsCopy, numbers)
 	n := len(numsCopy)
-	for i := 0; i < n-1; i++ {
-		if numsCopy[i] > numsCopy[i+1] {
-			temp := numsCopy[i]
-			numsCopy[i] = numsCopy[i+1]
-			numsCopy[i+1] = temp
-		}
-	}
+	singlePass(numsCopy, n)
 	return numsCopy
 }
 
 func Bubblesort(numbers []int) []int {
 	numsCopy := make([]int, len(numbers))
 	copy(numsCopy, numbers)
-	var i, j int
+	var i int
 	n := len(numsCopy)
 	for i = 0; i < n; i++ {
-		for j = 0; j < n-i-1; j++ {
-			if numsCopy[j] > numsCopy[j+1] {
-				temp := numsCopy[j]
-				numsCopy[j] = numsCopy[j+1]
-				numsCopy[j+1] = temp
-			}
-		}
+		singlePass(numsCopy, i)
 	}
 	return numsCopy
 }
