@@ -5,8 +5,8 @@ import (
 	"fmt"
 )
 
-var numbers = []int{3, 4, 4, 3, 6, 3}
+var year = 2000
 
 func main() {
-	fmt.Println(katas.Solve(numbers))
+	fmt.Println(katas.IsLeapYear(year))
 }
