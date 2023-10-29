@@ -5,9 +5,8 @@ import (
 	"fmt"
 )
 
-var numbers = []int{8, 6, 4, 2, 6, 1, 3}
+var numbers = []int{3, 4, 4, 3, 6, 3}
 
 func main() {
-	fmt.Printf("single pass: %v \n", katas.BubblesortOnce(numbers))
-	fmt.Printf("full sort: %v \n", katas.Bubblesort(numbers))
+	fmt.Println(katas.KeepFirstUnique(numbers))
 }
