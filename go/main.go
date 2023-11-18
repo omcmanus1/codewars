@@ -5,8 +5,8 @@ import (
 	"fmt"
 )
 
-var year = 2000
+var strng = "12.4"
 
 func main() {
-	fmt.Println(katas.IsLeapYear(year))
+	fmt.Println(katas.SumOfIntegersInString(strng))
 }
