@@ -5,8 +5,8 @@ import (
 	"fmt"
 )
 
-var strng = "12.4"
-
 func main() {
-	fmt.Println(katas.SumOfIntegersInString(strng))
+	var arr []interface{}
+	arr = append(arr, 1, 2, 'a', 'b', 443, "..", 34)
+	fmt.Println(katas.ListFiltering((arr)))
 }
