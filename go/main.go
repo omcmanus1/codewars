@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	var arr []interface{}
-	arr = append(arr, 1, 2, 'a', 'b', 443, "..", 34)
-	fmt.Println(katas.ListFiltering((arr)))
+	testArr := []int{-3, -2, -1, 3, 4, -5, -5, 5, -1, -5}
+	fmt.Println(katas.CountInput(testArr))
 }
