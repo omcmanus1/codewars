@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	testArr := []int{-3, -2, -1, 3, 4, -5, -5, 5, -1, -5}
+	testArr := []int{4, 4, 2, -3, 1, 4, 3, 2, 0, -5, 2, -2, -2, -5}
 	fmt.Println(katas.CountInput(testArr))
 }
