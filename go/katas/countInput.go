@@ -13,15 +13,15 @@ import "sort"
 func CountInput(inp []int) []interface{} {
 	var output []interface{}
 	var totalCount int
-	unique := map[int]int{}
+	// pre-allocate length for performance
+	unique := make(map[int]int, len(inp))
 	var singularCount int
 	var max int
 	var occurenceCount int
 	var maxVals = make([]int, 1)
-	var occurenceSlice = []interface{}{}
 
 	for _, val := range inp {
-		unique[val] = unique[val] + 1
+		unique[val]++
 		totalCount++
 	}
 
@@ -38,7 +38,7 @@ func CountInput(inp []int) []interface{} {
 		}
 	}
 	sort.Ints(maxVals)
-	occurenceSlice = []interface{}{maxVals, occurenceCount}
+	occurenceSlice := []interface{}{maxVals, occurenceCount}
 
 	output = append(output, totalCount, len(unique), singularCount, occurenceSlice)
 	return output
