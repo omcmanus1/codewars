@@ -1,4 +1,4 @@
-package katas
+package kata
 
 func singlePass(arr []int, n int, j int) []int {
 	for i := 0; i < n-j-1; i++ {

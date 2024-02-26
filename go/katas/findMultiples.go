@@ -1,4 +1,4 @@
-package katas
+package kata
 
 func FindMultiples(integer, limit int) []int {
 	output := []int{}

@@ -1,4 +1,4 @@
-package katas
+package kata
 
 func Maps(x []int) []int {
 	var output []int

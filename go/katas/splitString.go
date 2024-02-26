@@ -1,4 +1,4 @@
-package katas
+package kata
 
 func SplitString(str string) []string {
 	var output []string

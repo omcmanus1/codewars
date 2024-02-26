@@ -1,4 +1,4 @@
-package katas
+package kata
 
 func Rearrange(a, b string) (output string) {
 	lenA := len(a)

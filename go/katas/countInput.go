@@ -6,7 +6,7 @@
 // 5: occurence count of task 4
 // 4 & 5 are returned as a slice
 
-package katas
+package kata
 
 import "sort"
 

@@ -1,4 +1,4 @@
-package katas
+package kata
 
 /*
 find n, which satisfies:

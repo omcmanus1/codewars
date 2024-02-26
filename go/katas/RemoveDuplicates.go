@@ -1,4 +1,4 @@
-package katas
+package kata
 
 import "golang.org/x/exp/slices"
 

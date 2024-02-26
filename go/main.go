@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/omcmanus1/codewars/katas"
+	kata "github.com/omcmanus1/codewars/katas"
 )
 
 func main() {
 	testArr := []string{"az", "toto", "picaro", "zone", "kiwi"}
-	fmt.Println(katas.PartList(testArr))
+	fmt.Println(kata.PartList(testArr))
 }

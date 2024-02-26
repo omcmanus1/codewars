@@ -1,4 +1,4 @@
-package katas
+package kata
 
 func IsLeapYear(year int) bool {
 	var output bool

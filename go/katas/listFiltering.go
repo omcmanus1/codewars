@@ -1,4 +1,4 @@
-package katas
+package kata
 
 func ListFiltering(arr []interface{}) []int {
 	var output []int
