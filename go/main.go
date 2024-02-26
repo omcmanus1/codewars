@@ -1,8 +1,9 @@
 package main
 
 import (
-	"codewars/katas"
 	"fmt"
+
+	"github.com/omcmanus1/codewars/katas"
 )
 
 func main() {
