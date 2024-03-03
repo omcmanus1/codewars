@@ -1,6 +1,6 @@
 package kata
 
-import "golang.org/x/exp/slices"
+import "slices"
 
 func SlicesSolve(arr []int) []int {
 	var output []int
