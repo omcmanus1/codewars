@@ -3,6 +3,7 @@ build
 npm-debug.log
 .nyc
 .env
+env
 .DS_Store
 package*
 scratch.js
